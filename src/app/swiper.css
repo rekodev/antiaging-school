@@ -1,0 +1,20 @@
+/* Changing the color of the navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #494949; /* Replace with your desired color */
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 50px;
+}
+
+/* Changing the color of pagination bullets */
+.swiper-pagination-bullet {
+  background-color: #494949; /* Replace with your desired color */
+}
+
+/* Changing the color of the active pagination bullet */
+.swiper-pagination-bullet-active {
+  background-color: #494949; /* Replace with your desired color */
+}

@@ -1,113 +1,147 @@
-import Image from 'next/image'
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
+import CourseCard from '@/components/CourseCard';
+import ReviewSwiper from '@/components/ReviewSwiper';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+      <Header />
+      <section id='section1' className='bg-primary-dark pt-6 md:pt-0'>
+        <div className='grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-11 lg:pt-28'>
+          <div className='mr-auto place-self-center lg:col-span-7'>
+            <h1 className='max-w-2xl mb-4 text-4xl text-dark font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl'>
+              Kas yra <br />
+              Antiaging School?
+            </h1>
+            <p className='max-w-2xl mt-6 mb-6 font-light text-dark lg:mt-8 lg:mb-8 md:text-lg lg:text-xl'>
+              Ar <b className='font-bold'>ŽINOJOTE</b>, jog jūsų veidas
+              prasideda nuo pėdų? O tai kad norint atsikratyti kabančio
+              pagurklio reikia pradėti nuo dubens dugno ir randų korekcijos? Tai
+              tik maža dalis to ko mokome anti-aging mokykloje.
+            </p>
+            <p className='max-w-2xl mb-6 font-light text-dark lg:mb-8 md:text-lg lg:text-xl'>
+              Išmoksite pašalinti blokus kūne ir sumažinti asimetrija atliekant
+              kaukolės kaulų korekciją. Antiaging mokykla tai makymai/ kursai
+              kurie gimsta ir nuolat tobulinami vadovaujantis mano ir klientų
+              patirtimi. Mokymai paremti{' '}
+              <b className='font-bold'>REZULTATAIS</b>.
+            </p>
+            <p className='max-w-2xl mb-6 font-light text-dark lg:mb-8 md:text-lg lg:text-xl'>
+              <b className=' font-bold'>Antiaging School</b> - tai mokykla, kur
+              išmoksite senėjimo procesų prilėtinimo be botokso ir injekcijų.
+            </p>
+          </div>
+          <div className='hidden lg:mt-0 lg:col-span-4 lg:flex lg:justify-self-end rounded-lg overflow-hidden'>
+            <img src='cream.png' alt='hero image' className='w-full' />
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <section id='section2' className='bg-primary-light'>
+        <div className='max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6'>
+          {/* Row */}
+          <div className='items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16'>
+            <img
+              className='hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex'
+              src='jelena.jpg'
+              alt='feature image 2'
+            />
+            <div className='text-dark'>
+              <h2 className='mb-6 text-4xl font-extrabold tracking-tight text-dark'>
+                Sveiki, mano vardas Jelena
+              </h2>
+              <p className='mb-8 font-light lg:text-xl'>
+                Jei trumpai apie mane, tai esu tas žmogus, kuris moko žmones
+                laikyti liežuvį už dantų ir ten kur jam priklauso - ant gomurio.
+              </p>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+              <p className='mb-8 font-light lg:text-xl'>
+                Esu horizontalių raktikaulių ambasadorė! Nes būtent{' '}
+                <b className='font-bold'>RAKTIKAULIAI</b> nusako kokios buklės
+                yra jūsų laikysena.
+              </p>
+
+              <p className='mb-8 font-light lg:text-xl'>
+                Esu tarptautinė asmeninė trenerė. Tarptautinės faceplastikos ir
+                osteopatijos akademijos Dubajuje abiturientė.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id='section3' className='bg-primary-dark'>
+        <div className='max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6'>
+          <div className='max-w-screen-md mx-auto mb-8 text-center lg:mb-12'>
+            <h2 className='mb-4 text-3xl font-extrabold tracking-tight text-dark'>
+              Kursai
+            </h2>
+            <p className='mb-5 font-light text-dark sm:text-xl '>
+              Čia, Antiaging mokykloje, mes siūlome įvairius kursus, skirtus
+              jūsų grožiui ir sveikatai. Mūsų programose rasite viską, nuo
+              patarimų, kaip pasiekti plokščią pilvą, iki metodų, kaip pabrėžti
+              gražius raktikaulius.
+            </p>
+          </div>
+          <div className='space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0'>
+            {/* Pricing Card */}
+            <CourseCard
+              title='Plokščias pilvas'
+              description='Šis kursas skirtas tiems, kurie negali atsikratyti pilvo!'
+              price={180}
+              url={''}
+              imgSrc='pilvas.jpg'
+            />
+            {/* Pricing Card */}
+            <CourseCard
+              title='Gražūs raktikauliai'
+              description='Atpalaiduosite įsitempusius raumenis ir grąžinsite raktikaulius į vietas'
+              price={180}
+              url={''}
+              imgSrc='raktikauliai.jpg'
+            />
+            {/* Pricing Card */}
+            <CourseCard
+              title='Konsultacija'
+              description='Konsultacijos užtikrins nuoseklumą ir tęstinumą. Trukmė 5 sav.'
+              price={180}
+              url={''}
+              imgSrc='konsultacija.jpg'
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id='section4' className='bg-primary-light'>
+        <div className='max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-12 lg:px-6'>
+          <h2 className='mb-4 text-3xl font-extrabold tracking-tight text-dark'>
+            Atsiliepimai
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+          <ReviewSwiper />
+        </div>
+      </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+      <section id='section5' className='bg-primary-dark'>
+        <div className='max-w-screen-xl px-4 py-8 mx-auto lg:py-16 lg:px-6'>
+          <div className='max-w-screen-sm mx-auto text-center'>
+            <h2 className='mb-4 text-3xl font-extrabold leading-tight tracking-tight text-dark'>
+              Prisijunkite prie mūsų!
+            </h2>
+            <p className='mb-6 font-light text-gray-500 md:text-lg'>
+              Prisijunkite prie Antiaging School jau šiandien
+            </p>
+            <a
+              href='https://antiaging-school.mn.co/'
+              className='text-dark bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none'
+            >
+              Antiaging School bendruomenė
+            </a>
+          </div>
+        </div>
+      </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <Footer />
     </main>
-  )
+  );
 }

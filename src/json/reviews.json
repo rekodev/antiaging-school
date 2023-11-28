@@ -1,0 +1,32 @@
+[
+  {
+    "id": "review-1",
+    "name": "Daiva",
+    "image": "src/assets/images/reviews/Daiva(1).jpg",
+    "text": "Jelenos duoti pratimai pilvui yra tokie efektyvūs, kad net nemoku apsakyti. Turėjau 3 cezario pjūvius. Esu sportuojanti. Bet tik su šiais pratimais pradėjau jausti kad pagaliau įsijungia pilvo raumenys esantys virš rando. Šiuos pratimus dabar visada įdedu į visas kūno treniruotes. Ir tikrai nuo jų jaučiu rezultatą! Ir šiaip jie labai smagūs. Darau net mašinoje kartais :)"
+  },
+  {
+    "id": "review-2",
+    "name": "Viktorija",
+    "image": "src/assets/images/reviews/Viktorija.jpg",
+    "text": "Pirmą kartą susidūriau su tokiu formatu ir aplamai su tokiais pratimai. Na ir man labai patiko, įsitraukiau, patinka jausmas kai atlieki visas technikas. Viskas organizuotai, labai aiškiai ir išsamiai aiškini kaip atlikti technikas. Na tikrai užsikabinau ir aš. Ačiū tau labai."
+  },
+  {
+    "id": "review-3",
+    "name": "Sandra",
+    "image": "src/assets/images/reviews/Sandra.jpg",
+    "text": "Man tai visiškai nauja patirtis ir atradimas. Kai išmoksti daryti pratimus ir techniką - tai neatima daug laiko dienos eigoje. Aš nesu mėgėja aktyvaus sporto, nebent pasivaikščiojimus užskaitome, tai man toks raumenų aktyvinimas labai patinka. Labai ačiū už aiškiai ir sistemingai išdėstytas pamokas ir už šiltą atgalinį ryšį, kad galėjau užduoti ir kvailiausius klausimus."
+  },
+  {
+    "id": "review-4",
+    "name": "Daiva",
+    "image": "src/assets/images/reviews/Daiva.jpg",
+    "text": "Negaliu atsidžiaugti tuo, kad atradau tave. Esu įdėjusi labai daug tam pastangų ir padėjau pati sau. Net pačiai neįtikėtinas yra gautas rezultatas. Man jau netiktų prasti specialistai :). Atėjau pradžiai veido grožio procedūroms, o dabar matau, kad keliai veda dar toliau. Ye!"
+  },
+  {
+    "id": "review-5",
+    "name": "Ieva",
+    "image": "src/assets/images/reviews/Ieva.jpg",
+    "text": "Labai patiko mokymų formatas - galima peržiūrėti  video patogiu laiku, daryti pratimus taip pat sau patogiu laiku video informacija pateikta labai aiškiai, konkrečiai, trumpai. Iškilus klausimams Jelena labai operatyviai ir aiškiai į juos atsakė."
+  }
+]
