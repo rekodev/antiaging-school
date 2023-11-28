@@ -13,11 +13,11 @@ import reviewData from '../json/reviews.json';
 import Review from './Review';
 
 const reviewImages = [
-  'reviews/Daiva(1).jpg',
-  'reviews/Viktorija.jpg',
-  'reviews/Sandra.jpg',
-  'reviews/Daiva.jpg',
-  'reviews/Ieva.jpg',
+  '/reviews/Daiva(1).jpg',
+  '/reviews/Viktorija.jpg',
+  '/reviews/Sandra.jpg',
+  '/reviews/Daiva.jpg',
+  '/reviews/Ieva.jpg',
 ];
 
 const ReviewSwiper = () => {

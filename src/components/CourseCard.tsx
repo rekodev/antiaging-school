@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 type Props = {
@@ -20,10 +21,12 @@ const CourseCard = ({
   return (
     <div className='overflow-hidden flex flex-col max-w-lg mx-auto text-center text-dark bg-white border border-primary-dark rounded-lg shadow'>
       <div className='relative h-64 w-full'>
-        <img
+        <Image
           className='absolute top-0 left-0 w-full h-full object-cover'
           src={imgSrc}
-          alt={imgAlt}
+          alt={imgAlt ? imgAlt : 'card-image'}
+          width={382}
+          height={256}
         />
       </div>
       <div className='p-6 xl:p-8'>

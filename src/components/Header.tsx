@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const Header = () => {
@@ -6,10 +7,12 @@ const Header = () => {
       <nav className=' bg-primary-light border-primary-dark py-4'>
         <div className='flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto'>
           <a href='section1' className='flex items-center '>
-            <img
-              src='logo.png'
+            <Image
+              src='/logo.png'
               className='h-6 max-h-6 sm:h-9'
               alt='Antiaging School Logo'
+              height={24}
+              width={240}
             />
           </a>
           <div className='flex items-center lg:order-1 '>

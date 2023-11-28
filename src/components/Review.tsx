@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 type Props = {
   name: string;
   text: string;
@@ -21,13 +23,17 @@ const Review = ({ name, text, imgSrc }: Props) => {
         />
       </svg>
       <blockquote>
-        <p className='text-xl font-light text-gray-900 md:text-xl'>"{text}"</p>
+        <p className='text-xl font-light text-gray-900 md:text-xl'>
+          &quot;{text}&quot;
+        </p>
       </blockquote>
       <figcaption className='flex flex-col gap-2 items-center justify-center mt-6 space-x-3'>
-        <img
+        <Image
           className='w-12 h-12 rounded-full'
           src={imgSrc}
           alt='profile picture'
+          width={48}
+          height={48}
         />
         <div className='flex items-center divide-x-2 divide-gray-500 '>
           <div className='pr-3 font-medium text-dark'>{name}</div>

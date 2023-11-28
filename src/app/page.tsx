@@ -2,6 +2,7 @@ import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import CourseCard from '@/components/CourseCard';
 import ReviewSwiper from '@/components/ReviewSwiper';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -33,7 +34,13 @@ export default function Home() {
             </p>
           </div>
           <div className='hidden lg:mt-0 lg:col-span-4 lg:flex lg:justify-self-end rounded-lg overflow-hidden'>
-            <img src='cream.png' alt='hero image' className='w-full' />
+            <Image
+              src='/cream.png'
+              alt='hero image'
+              className='w-full'
+              height={900}
+              width={600}
+            />
           </div>
         </div>
       </section>
@@ -42,10 +49,12 @@ export default function Home() {
         <div className='max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6'>
           {/* Row */}
           <div className='items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16'>
-            <img
+            <Image
               className='hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex'
-              src='jelena.jpg'
+              src='/jelena.jpg'
               alt='feature image 2'
+              height={900}
+              width={720}
             />
             <div className='text-dark'>
               <h2 className='mb-6 text-4xl font-extrabold tracking-tight text-dark'>
@@ -91,7 +100,7 @@ export default function Home() {
               description='Šis kursas skirtas tiems, kurie negali atsikratyti pilvo!'
               price={180}
               url={''}
-              imgSrc='pilvas.jpg'
+              imgSrc='/pilvas.jpg'
             />
             {/* Pricing Card */}
             <CourseCard
@@ -99,7 +108,7 @@ export default function Home() {
               description='Atpalaiduosite įsitempusius raumenis ir grąžinsite raktikaulius į vietas'
               price={180}
               url={''}
-              imgSrc='raktikauliai.jpg'
+              imgSrc='/raktikauliai.jpg'
             />
             {/* Pricing Card */}
             <CourseCard
@@ -107,7 +116,7 @@ export default function Home() {
               description='Konsultacijos užtikrins nuoseklumą ir tęstinumą. Trukmė 5 sav.'
               price={180}
               url={''}
-              imgSrc='konsultacija.jpg'
+              imgSrc='/konsultacija.jpg'
             />
           </div>
         </div>
